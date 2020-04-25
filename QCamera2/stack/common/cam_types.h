@@ -1698,13 +1698,8 @@ typedef struct {
 } cam_hw_data_overwrite_t;
 
 typedef struct {
-    uint32_t streamID;
-    uint32_t buf_index;
-} cam_stream_request_t;
-
-typedef struct {
     uint32_t num_streams;
-    cam_stream_request_t stream_request[MAX_NUM_STREAMS];
+    uint32_t streamID[MAX_NUM_STREAMS];
 } cam_stream_ID_t;
 
 /*CAC Message posted during pipeline*/
